@@ -43,6 +43,10 @@ import {
 
 const Cards = (props) => {
     const {charArr} = props;
+    console.log(charArr)
+    if (!charArr) {
+        return <h1>Loading...</h1>
+    } else {
   return (
      <div style={{display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
 
@@ -61,8 +65,9 @@ const Cards = (props) => {
              )
          })}
      </div>
+    
 
-  );
+  );}
 };
 
 export default Cards
